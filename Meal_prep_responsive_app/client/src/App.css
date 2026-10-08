@@ -1,0 +1,167 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.meal-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid #d5dfd2;
+  border-radius: 12px;
+}
+
+.meal-card h3 {
+  margin-top: 0;
+}
+
+.meal-card li {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 700px) {
+  .meal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.date-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.date-picker input {
+  padding: 10px;
+  border: 1px solid #71816e;
+  border-radius: 6px;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.meal-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d5dfd2;
+  border-radius: 12px;
+}
+
+.meal-slot label {
+  font-weight: bold;
+}
+
+.meal-slot select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  color: #203025;
+  background: white;
+  border: 1px solid #71816e;
+  border-radius: 6px;
+}
+
+@media (min-width: 700px) {
+  .planner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.save-button {
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  background: #285b38;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-button:hover:not(:disabled) {
+  background: #1d4429;
+}
+
+.save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.save-button:focus-visible {
+  outline: 3px solid #285b38;
+  outline-offset: 3px;
+}
+
+.plan-hint {
+  color: #495747;
+}
+
+.shopping-section {
+  margin: 24px 0 32px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d5dfd2;
+  border-radius: 12px;
+}
+
+.shopping-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-list li + li {
+  border-top: 1px solid #e4e9e2;
+}
+
+.shopping-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.shopping-item input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: #285b38;
+}
+
+.item-checked {
+  text-decoration: line-through;
+  color: #626b60;
+}
+
+.meal-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.meal-card,
+.meal-slot,
+.shopping-section {
+  background: #6bb6df;
+  border-color: #397da5;
+}
