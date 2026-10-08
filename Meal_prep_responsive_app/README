@@ -1,0 +1,2 @@
+- Inside server: npm install, then node index.js.
+- Inside client: npm install, then npm run dev.
